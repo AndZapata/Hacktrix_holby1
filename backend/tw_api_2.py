@@ -34,26 +34,24 @@ def doit(apikey, secretkey, search):
         if not r.json().get('statuses'):
             return
         my_list = []
-        my_list2 = []
+        my_list2 = {}
         for tweet in r.json().get('statuses'):
             try:
-                print("[{}] {} by {}".format(tweet.get('id'),
-                                             tweet.get('text'),
-                                             tweet.get('user').get('name')))
                 location = tweet.get('place').get('bounding_box').get('coordinates')
                 my_neigh = buscar_location(location)
-                my_list = [datetime.date,
-                           datetime.time,
+                my_list = [datetime.date.isoformat(),
+                           datetime.time.isoformat(),
                            tweet.get('user').get('name'),
                            tweet.get('created_at'),
-                           my_neigh]
-                print("Este es my_list", my_list)
+                           my_neigh,
+                           location]
+                print("Este es mi_dict", my_list)
             except Exception:
-                print("No location in tweet")
+                print("Error")
                 pass
         my_list2.append(my_list)
-        print (my_list2)
-        return (my_list2)
+        print (my_list)
+        return (my_list)
     except Exception:
         print ("error")
         return None
