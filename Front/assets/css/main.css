@@ -1805,8 +1805,8 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #5385c1;
-			color: #bacee6;
+			background: #42970a;
+			color: #a7f7bb;
 		}
 
 			section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
@@ -1814,7 +1814,7 @@
 			}
 
 			section.wrapper.style1 header p, article.wrapper.style1 header p {
-				color: #bacee6;
+				color: a7f7bb;
 			}
 
 			section.wrapper.style1 h3, article.wrapper.style1 h3 {
@@ -2660,7 +2660,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #5385c1;
+			background-color: #42970a;
 			color: #ffffff !important;
 		}
 
@@ -2669,7 +2669,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #6692c8;
+				background-color: #15aa3a;
 			}
 
 			input[type="submit"].special:active,
