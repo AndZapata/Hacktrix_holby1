@@ -1,0 +1,398 @@
+{
+ "currentVersion": 10.51,
+ "id": 7,
+ "name": "BOGOTÁ LIMPIA",
+ "type": "Feature Layer",
+ "description": "Prestador del servicio de aseo en el Área de servicio exclusivo 4",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857
+ },
+ "copyrightText": "Unidad Administrativa Especial de Servicios Públicos - UAESP",
+ "parentLayer": {
+  "id": 5,
+  "name": "Frecuencia de recolección"
+ },
+ "subLayers": [],
+ "minScale": 1200000,
+ "maxScale": 500,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "CONCESIONARIO",
+   "field2": "FRECUENCIA",
+   "field3": null,
+   "defaultSymbol": null,
+   "defaultLabel": null,
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       115,
+       178,
+       115,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        156,
+        156,
+        156,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "4,5",
+     "label": "Lun - Mar - Mie - Jue - Vie",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       180,
+       215,
+       158,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        156,
+        156,
+        156,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "4,8",
+     "label": "Mar - Jue - Sab",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       211,
+       255,
+       190,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        156,
+        156,
+        156,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "4,7",
+     "label": "Lun a Sab",
+     "description": ""
+    }
+   ],
+   "fieldDelimiter": ","
+  },
+  "transparency": 30,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -8282398.4887,
+  "ymin": 425158.325100001,
+  "xmax": -8238727.0187,
+  "ymax": 539068.432799999,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "LOCALIDAD",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "fields": [
+  {
+   "name": "ASE",
+   "type": "esriFieldTypeInteger",
+   "alias": "Área de Servicio Exclusivo",
+   "domain": null
+  },
+  {
+   "name": "LOCALIDAD",
+   "type": "esriFieldTypeString",
+   "alias": "Localidad",
+   "length": 2,
+   "domain": {
+    "type": "codedValue",
+    "name": "D_COD_LOCA",
+    "codedValues": [
+     {
+      "name": "Usaquén",
+      "code": "01"
+     },
+     {
+      "name": "Chapinero",
+      "code": "02"
+     },
+     {
+      "name": "Santa Fé",
+      "code": "03"
+     },
+     {
+      "name": "San Cristóbal",
+      "code": "04"
+     },
+     {
+      "name": "Usme",
+      "code": "05"
+     },
+     {
+      "name": "Tunjuelito",
+      "code": "06"
+     },
+     {
+      "name": "Bosa",
+      "code": "07"
+     },
+     {
+      "name": "Kennedy",
+      "code": "08"
+     },
+     {
+      "name": "Fontibón",
+      "code": "09"
+     },
+     {
+      "name": "Engativá",
+      "code": "10"
+     },
+     {
+      "name": "Suba",
+      "code": "11"
+     },
+     {
+      "name": "Barrios Unidos",
+      "code": "12"
+     },
+     {
+      "name": "Teusaquillo",
+      "code": "13"
+     },
+     {
+      "name": "Los Mártires",
+      "code": "14"
+     },
+     {
+      "name": "Antonio Nariño",
+      "code": "15"
+     },
+     {
+      "name": "Puente Aranda",
+      "code": "16"
+     },
+     {
+      "name": "La Candelaria",
+      "code": "17"
+     },
+     {
+      "name": "Rafael Uribe Uribe",
+      "code": "18"
+     },
+     {
+      "name": "Ciudad Bolívar",
+      "code": "19"
+     },
+     {
+      "name": "Sumapaz",
+      "code": "20"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "FRECUENCIA",
+   "type": "esriFieldTypeString",
+   "alias": "Frecuencia",
+   "length": 50,
+   "domain": {
+    "type": "codedValue",
+    "name": "D_FRECUENCIA",
+    "codedValues": [
+     {
+      "name": "1 Vez cada 15 días",
+      "code": "1"
+     },
+     {
+      "name": "Domingo",
+      "code": "2"
+     },
+     {
+      "name": "Lunes - Domingo",
+      "code": "3"
+     },
+     {
+      "name": "Lunes - Jueves",
+      "code": "4"
+     },
+     {
+      "name": "Lunes \u2013 Martes \u2013 Miércoles \u2013 Jueves - Viernes",
+      "code": "5"
+     },
+     {
+      "name": "Lunes - Miércoles - Viernes",
+      "code": "6"
+     },
+     {
+      "name": "Lunes a Sábado",
+      "code": "7"
+     },
+     {
+      "name": "Martes - Jueves - Sábado",
+      "code": "8"
+     },
+     {
+      "name": "Martes - Viernes",
+      "code": "9"
+     },
+     {
+      "name": "Miércoles - Sábado",
+      "code": "10"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "SHAPE",
+   "type": "esriFieldTypeGeometry",
+   "alias": "SHAPE",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.AREA",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.AREA",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.LEN",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.LEN",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "FECVIGDES",
+   "type": "esriFieldTypeDate",
+   "alias": "Vigencia",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "CONCESIONARIO",
+   "type": "esriFieldTypeString",
+   "alias": "Prestador del Servicio",
+   "length": 50,
+   "domain": {
+    "type": "codedValue",
+    "name": "D_CONCESIONARIO",
+    "codedValues": [
+     {
+      "name": "PROMOAMBIENTAL",
+      "code": "1"
+     },
+     {
+      "name": "LIME",
+      "code": "2"
+     },
+     {
+      "name": "CIUDAD LIMPIA",
+      "code": "3"
+     },
+     {
+      "name": "BOGOTÁ LIMPIA",
+      "code": "4"
+     },
+     {
+      "name": "ÁREA LIMPIA",
+      "code": "5"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "FRANJAHORARIA",
+   "type": "esriFieldTypeString",
+   "alias": "Franja Horaria",
+   "length": 255,
+   "domain": null
+  }
+ ],
+ "indexes": [
+  {
+   "name": "R4555216_SDE_ROWID_UK",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "A997_IX1",
+   "fields": "SHAPE",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, AMF, geoJSON",
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null
+}
