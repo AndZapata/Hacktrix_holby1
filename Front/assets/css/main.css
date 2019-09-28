@@ -1655,7 +1655,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #5385c1;
+		color: #42970a;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1900,8 +1900,9 @@
 		justify-content: space-between;
 	}
 
-		.flex.flex-2 article {
-			width: 47%;
+		.flex.flex-2 canvas {
+			position: relative;
+			width: 50%;
 		}
 
 		.flex.flex-3 article {
@@ -2716,7 +2717,7 @@
 	}
 
 		.subpage #header {
-			background: #5385c1;
+			background: #42970a;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
