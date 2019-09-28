@@ -1,0 +1,74 @@
+{
+ "currentVersion": 10.51,
+ "id": 5,
+ "name": "Frecuencia de recolección",
+ "type": "Group Layer",
+ "description": "En las diferentes macrorutas de recolección son los días en que el consesionario realiza la prestación del servicio de recolección de residuos domiciliarios y la distribución de los recursos y equipos a fin de optimizar la actividad en el área urbana",
+ "geometryType": null,
+ "copyrightText": "Unidad Administrativa Especial de Servicios Públicos - UAESP",
+ "parentLayer": null,
+ "subLayers": [
+  {
+   "id": 6,
+   "name": "ÁREA LIMPIA"
+  },
+  {
+   "id": 7,
+   "name": "BOGOTÁ LIMPIA"
+  },
+  {
+   "id": 8,
+   "name": "CIUDAD LIMPIA"
+  },
+  {
+   "id": 9,
+   "name": "LIME"
+  },
+  {
+   "id": 10,
+   "name": "PROMOAMBIENTAL"
+  }
+ ],
+ "minScale": 0,
+ "maxScale": 0,
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -8282398.4887,
+  "ymin": 425158.325100001,
+  "xmax": -8238727.0187,
+  "ymax": 539068.432799999,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeNone",
+ "displayField": "",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "fields": null,
+ "indexes": [],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": false,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query",
+ "supportsStatistics": false,
+ "supportsAdvancedQueries": false,
+ "supportedQueryFormats": "JSON, AMF, geoJSON",
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": false,
+  "supportsOrderBy": false,
+  "supportsDistinct": false,
+  "supportsPagination": false,
+  "supportsTrueCurve": false,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": false
+ }
+}
