@@ -2771,6 +2771,10 @@
 				color: #ffffff;
 			}
 
+			#header twitter-hashtag-button {
+				justify-items: flex-end;
+			}
+
 			#header a:last-child {
 				padding-right: 0;
 			}
@@ -2934,12 +2938,11 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/1.jpg');
+		background-image: url('../../images/5.jpg');
 		background-size: cover;
 		background-position: top;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-repeat: no-repeat;
-		background-size: contain;
 		text-align: center;
 		border-top: 0.5em solid #5385c1;
 	}
