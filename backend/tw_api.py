@@ -49,6 +49,8 @@ def doit(apikey, secretkey, search):
                            my_neigh]
                 print("Este es my_list", my_list)
             except Exception:
+                my_text = tweet.get('text')
+                print(my_text)
                 print("No location in tweet")
                 pass
         my_list2.append(my_list)
