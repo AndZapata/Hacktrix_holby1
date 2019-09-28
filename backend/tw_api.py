@@ -33,35 +33,44 @@ def doit(apikey, secretkey, search):
 
         if not r.json().get('statuses'):
             return
-
-        n = 0
         my_list = []
+        my_list2 = []
         for tweet in r.json().get('statuses'):
             try:
+                print("[{}] {} by {}".format(tweet.get('id'),
+                                             tweet.get('text'),
+                                             tweet.get('user').get('name')))
                 location = tweet.get('place').get('bounding_box').get('coordinates')
-#                print("este es location", location)
                 my_neigh = buscar_location(location)
-                my_list = [datetime.date, datetime.time, tweet.get('user')
-                           .get('name'), tweet.get('created_at'), my_neigh]
-                print("Esta es mi_lista", my_list)
-                n += 1
+                my_list = [datetime.date,
+                           datetime.time,
+                           tweet.get('user').get('name'),
+                           tweet.get('created_at'),
+                           my_neigh]
+                print("Este es my_list", my_list)
             except Exception:
+                print("No location in tweet")
                 pass
-        return r
+        my_list2.append(my_list)
+        print (my_list2)
+        return (my_list2)
     except Exception:
+        print ("error")
         return None
 
 
 def buscar_location(a):
-    print("Este place.id", a);
-    return ("Venecia")
-
-def buscar_coordinate(a):
-    return("Fontibon")
-
-def buscar_hashtag(a):
-    return("Muzu")
-
+    a1 = a[0][0][0]
+    a2 = a[0][1][0]
+    a3 = a[0][2][0]
+    a4 = a[0][3][0]
+    b1 = a[0][0][1]
+    b2 = a[0][1][1]
+    b3 = a[0][2][1]
+    b4 = a[0][3][1]
+    a_prom = (a1 + a2 + a3 + a4) / 4
+    b_prom = (b1 + b2 + b3 + b4) / 4
+    return ([a_prom, b_prom])
 
 if __name__ == "__main__":
     doit(argv[1], argv[2], argv[3])
