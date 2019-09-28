@@ -2771,6 +2771,10 @@
 				color: #ffffff;
 			}
 
+			#header twitter-hashtag-button {
+				justify-items: flex-end;
+			}
+
 			#header a:last-child {
 				padding-right: 0;
 			}
@@ -2934,10 +2938,10 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/bog.jpg');
+		background-image: url('../../images/5.jpg');
 		background-size: cover;
 		background-position: top;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-repeat: no-repeat;
 		text-align: center;
 		border-top: 0.5em solid #5385c1;
@@ -2946,7 +2950,8 @@
 		#banner h1 {
 			font-size: 3.5em;
 			font-weight: 100;
-			color: #fff;
+			font-family: 'Joselin Sans', sans-serif;
+			color: #e8dcfa;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
@@ -2954,7 +2959,8 @@
 
 		#banner p {
 			font-size: 1em;
-			color: rgba(255, 255, 255, 0.55);
+			color: #eeeeee;
+			font-family: 'Joselin Sans', sans-serif;
 			margin-bottom: 1.75em;
 		}
 
