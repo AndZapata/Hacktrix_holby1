@@ -38,17 +38,12 @@ def doit(apikey, secretkey, search):
         my_list = []
         for tweet in r.json().get('statuses'):
             try:
-                location = tweet.get('place')
-                if location is not None:
-                   my_neigh = buscar_location(tweet.get('place').get('id'))
-                elif len(tweet.get('place').get('coordinates')) is not 0:
-                    my_neigh = buscar_coordinate(tweet.get('place').get('coordinates'))
-                else:
-                    my_neigh = buscar_hashtag (tweet.get('text'))
+                location = tweet.get('place').get('bounding_box').get('coordinates')
+#                print("este es location", location)
+                my_neigh = buscar_location(location)
                 my_list = [datetime.date, datetime.time, tweet.get('user')
                            .get('name'), tweet.get('created_at'), my_neigh]
-                print ("Esta es mi_lista", my_list)
-                print("Este es todo el tweet", tweet)
+                print("Esta es mi_lista", my_list)
                 n += 1
             except Exception:
                 pass
