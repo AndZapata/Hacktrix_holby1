@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 ''' Data by selected Zone '''
 
+from shapely.geometry import Point
+from shapely.geometry.polygon import Polygon
 
 usr_1 = {'username': 'juanito', 'ubicacion': [4.651375, -74.057543]}
+point = Point(4.651375, -74.057543)
+polygon = Polygon([(4.627890, -74.068540), (4.626040, -74.065890), (4.631366, -74.064377), (4.632500, -74.067714)])
+print(polygon.contains(point))
+
 coordenates = {'zone_1': {'coord': [[4.627890, -74.068540],
                                     [4.626040, -74.065890],
                                     [4.631366, -74.064377],
